@@ -1,8 +1,9 @@
+import Link from 'next/link'
 
 function Home({posts}) {
 	return (
 		<>
-			
+		 
 				<h1>Recent Posts</h1>
         {posts.data.map(post =>(
           <div key={posts.id}>
@@ -12,10 +13,7 @@ function Home({posts}) {
           </div>
         ))};
 				
-			  
-
-			
-
+		
 		</>
 	)
 }
