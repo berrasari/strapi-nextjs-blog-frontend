@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-      <footer>
-        Copyright 2022 Popup Builder 
+      <footer className="flex justify-center">
+        <div>Copyright 2022 Popup Builder </div>
       </footer>
     );
   }
