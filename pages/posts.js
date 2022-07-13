@@ -18,7 +18,7 @@ function Home({ posts}) {
 			{posts.data.map((post) => (
 			  <div key={post.id} className="flex justify-center flex-col rounded-lg shadow-lg overflow-hidden">
 				<div className="flex-shrink-0">
-				  <img className="h-48 w-full object-cover" src={post.attributes.imageUrl} alt="" />
+				  <img  className="h-48 w-full object-cover" src={post.attributes.cover} alt="" />
 				</div>
 				<div className="flex-1 bg-white p-6 flex flex-col justify-between items-center">
 				  <div className="flex-1 items-center">
