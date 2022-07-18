@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import HomeHeader from "../components/HomeHeader"
 
+
 function Home({ posts }) {
 	return (
 		<>
