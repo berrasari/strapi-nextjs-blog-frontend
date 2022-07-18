@@ -1,7 +1,14 @@
 import React from 'react'
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+
 
 function Blog({post}) {
+    const [render, setRender] = useState(false);
+   
+   useEffect(() => {
+      setRender(true);
+   }, []);
     return (
         <Link href={"/posts/" + post.attributes.slug}>
         <a>

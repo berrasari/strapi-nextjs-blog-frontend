@@ -1,10 +1,9 @@
 import Blog from '../components/Blog'
 import React from "react";
-import * as ReactDOM from "react-dom/client";
-import { StrictMode } from "react";
+import { useState, useEffect } from 'react';
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	const request = await fetch(`https://damp-scrubland-34325.herokuapp.com/api/posts/`);
 	const posts = await request.json();
 	return {
@@ -15,6 +14,11 @@ export async function getStaticProps() {
 	}
 }
 function Home({ posts })  {
+	const [render, setRender] = useState(false);
+   
+   useEffect(() => {
+      setRender(true);
+   }, []);
 
 	return (
 		<div className="relative bg-transparent pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
