@@ -1,6 +1,5 @@
 
 import Blog from '../components/Blog'
-import { useEffect, useState } from 'react'
 
 function Home({ posts }) {
 
@@ -43,6 +42,7 @@ export async function getServerSideProps() {
 		props: {
 			posts,
 		},
+		
 	}
 }
 
