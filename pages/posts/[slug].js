@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 
 const URL = 'https://damp-scrubland-34325.herokuapp.com/';
 
@@ -37,7 +37,7 @@ function Content({post}) {
     
     return (
         
-        <div className="relative py-16 bg-white overflow-hidden">
+        <div className="relative py-16 bg-transparent overflow-hidden">
             <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
                 <div className="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
                     <svg
@@ -121,7 +121,7 @@ function Content({post}) {
                 </div>
 
                 <figure>
-                    <img 
+                    <Image  
                         className="w-full rounded-lg"
                         src={post.data.attributes.coverlink} 
                         alt=""
@@ -130,7 +130,7 @@ function Content({post}) {
                     />
 
                 </figure>
-#
+
 
             </div>
         </div>

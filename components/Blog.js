@@ -12,12 +12,12 @@ function Blog({post}) {
   </div>
   <div className="flex-1 bg-white p-6 flex flex-col justify-between items-center">
     <div className="flex-1 items-center">
-      <p className="text-sm font-medium text-indigo-600">
+      <div className="text-sm font-medium text-indigo-600">
         
-      </p>
+      </div>
       <a  className="block mt-2 direction-column  ">
-        <p className="text-xl font-semibold text-gray-900 flex justify-center">{post.attributes.title}</p>
-        <p className="mt-3 text-base text-gray-500 flex justify-center">{post.attributes.description}</p>
+        <div className="text-xl font-semibold text-gray-900 flex justify-center">{post.attributes.title}</div>
+        <div className="mt-3 text-base text-gray-500 flex justify-center">{post.attributes.description}</div>
       </a>
     </div>
     <div className="mt-6  flex justify-center">
@@ -25,15 +25,12 @@ function Blog({post}) {
         
       </div>
       <div className="ml-3">
-        <p className="text-sm font-medium text-gray-900 flex justify-center">
+        <div className="text-sm font-medium text-gray-900 flex justify-center">
           <a href={post.attributes.author} className="hover:underline">
             {post.attributes.author}
           </a>
-        </p>
-        <div className="flex space-x-1 text-sm text-gray-500">
-          <time></time>
-          
         </div>
+    
       </div>
     </div>
   </div>
