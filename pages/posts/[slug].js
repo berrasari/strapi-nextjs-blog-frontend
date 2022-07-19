@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { useState, useEffect } from "react";
 const URL = 'https://damp-scrubland-34325.herokuapp.com/';
 
 
@@ -33,7 +33,11 @@ export async function getStaticProps({params}) {
 
 
 function Content({post}) {
-    
+    const [render, setRender] = useState(false);
+
+  useEffect(() => {
+    setRender(true);
+  }, []);
     
     return (
         
