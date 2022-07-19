@@ -125,7 +125,7 @@ function Content({post}) {
                 </div>
 
                 <div>
-                    <Image  
+                    <img  
                         className="w-full rounded-lg"
                         src={post.data.attributes.coverlink} 
                         alt=""

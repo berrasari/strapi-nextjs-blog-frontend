@@ -43,7 +43,7 @@ function Home({ posts }) {
               className="flex flex-col rounded-lg items-center shadow-lg overflow-hidden"
             >
               <Link href={"/posts/" + post.attributes.slug}>
-
+<a>
 
                 <div className="transition-all duration-150  w-full px-4 py-6 ">
                   <div className="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl">
@@ -95,7 +95,7 @@ function Home({ posts }) {
                     </div>
                   </div>
                 </div>
-
+</a>
               </Link>
             </div>
           ))}
