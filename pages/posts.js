@@ -42,62 +42,62 @@ function Home({ posts }) {
               key={post.id}
               className="flex flex-col rounded-lg items-center shadow-lg overflow-hidden"
             >
-				<Link href={"/posts/" + post.attributes.slug}>
-        
-            
-              <div className="transition-all duration-150  w-full px-4 py-6 ">
-                <div className="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl">
-                  <div className="md:flex-shrink-0">
-                    <img
-                      src={post.attributes.coverlink}
-                      alt="Blog Cover"
-                      className="object-fill w-full rounded-lg rounded-b-none md:h-56"
-                    />
-                  </div>
-                  <div className="flex items-center justify-between px-4 py-2 overflow-hidden">
-                    <div className="flex flex-row items-center">
-                      <div className="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
+              <Link href={"/posts/" + post.attributes.slug}>
 
-                      <div className="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
 
-                      <div className="text-xs font-medium text-gray-500 flex flex-row items-center"></div>
+                <div className="transition-all duration-150  w-full px-4 py-6 ">
+                  <div className="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl">
+                    <div className="md:flex-shrink-0">
+                      <img
+                        src={post.attributes.coverlink}
+                        alt="Blog Cover"
+                        className="object-fill w-full rounded-lg rounded-b-none md:h-56"
+                      />
                     </div>
-                  </div>
-                  <div className="border-gray-300" />
-                  <div className="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
-                    <div href="#" className="hover:underline">
-                      <h2 className="text-2xl font-bold tracking-normal text-gray-800">
-                        {post.attributes.title}
-                      </h2>
+                    <div className="flex items-center justify-between px-4 py-2 overflow-hidden">
+                      <div className="flex flex-row items-center">
+                        <div className="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
+
+                        <div className="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
+
+                        <div className="text-xs font-medium text-gray-500 flex flex-row items-center"></div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="border-gray-300" />
-                  <div className="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700">
-                    {post.attributes.description}
-                  </div>
-                  <div className="border-gray-300" />
-                  <div className="px-4 py-2 mt-2">
-                    <div class="flex items-center justify-between">
-                      <div class="flex items-center flex-1">
-                        <div class="flex flex-col mx-2">
-                          <div
-                            href=""
-                            class="font-semibold text-gray-700 hover:underline"
-                          >
-                            {post.attributes.author}
-                          </div>
-                          <div class="text-xs text-gray-600">
-                            {post.attributes.createdAt}
+                    <div className="border-gray-300" />
+                    <div className="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+                      <div href="#" className="hover:underline">
+                        <h2 className="text-2xl font-bold tracking-normal text-gray-800">
+                          {post.attributes.title}
+                        </h2>
+                      </div>
+                    </div>
+                    <div className="border-gray-300" />
+                    <div className="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700">
+                      {post.attributes.description}
+                    </div>
+                    <div className="border-gray-300" />
+                    <div className="px-4 py-2 mt-2">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center flex-1">
+                          <div class="flex flex-col mx-2">
+                            <div
+                              href=""
+                              class="font-semibold text-gray-700 hover:underline"
+                            >
+                              {post.attributes.author}
+                            </div>
+                            <div class="text-xs text-gray-600">
+                              {post.attributes.createdAt}
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-           
-		   </Link>
-		    </div>
+
+              </Link>
+            </div>
           ))}
         </div>
       </div>
