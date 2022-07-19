@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Blog from "../components/Blog";
+
 
 export async function getStaticProps() {
   const request = await fetch(
@@ -45,38 +45,38 @@ function Home({ posts }) {
 				<Link href={"/posts/" + post.attributes.slug}>
         
             
-              <div class="transition-all duration-150  w-full px-4 py-6 ">
-                <div class="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl">
-                  <div class="md:flex-shrink-0">
+              <div className="transition-all duration-150  w-full px-4 py-6 ">
+                <div className="flex flex-col items-stretch min-h-full pb-4 mb-6 transition-all duration-150 bg-white rounded-lg shadow-lg hover:shadow-2xl">
+                  <div className="md:flex-shrink-0">
                     <img
                       src={post.attributes.coverlink}
                       alt="Blog Cover"
-                      class="object-fill w-full rounded-lg rounded-b-none md:h-56"
+                      className="object-fill w-full rounded-lg rounded-b-none md:h-56"
                     />
                   </div>
-                  <div class="flex items-center justify-between px-4 py-2 overflow-hidden">
-                    <div class="flex flex-row items-center">
-                      <div class="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
+                  <div className="flex items-center justify-between px-4 py-2 overflow-hidden">
+                    <div className="flex flex-row items-center">
+                      <div className="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
 
-                      <div class="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
+                      <div className="text-xs font-medium text-gray-500 flex flex-row items-center mr-2"></div>
 
-                      <div class="text-xs font-medium text-gray-500 flex flex-row items-center"></div>
+                      <div className="text-xs font-medium text-gray-500 flex flex-row items-center"></div>
                     </div>
                   </div>
-                  <hr class="border-gray-300" />
-                  <div class="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
-                    <a href="#" class="hover:underline">
-                      <h2 class="text-2xl font-bold tracking-normal text-gray-800">
+                  <div className="border-gray-300" />
+                  <div className="flex flex-wrap items-center flex-1 px-4 py-1 text-center mx-auto">
+                    <div href="#" className="hover:underline">
+                      <h2 className="text-2xl font-bold tracking-normal text-gray-800">
                         {post.attributes.title}
                       </h2>
-                    </a>
+                    </div>
                   </div>
-                  <hr class="border-gray-300" />
-                  <p class="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700">
+                  <div className="border-gray-300" />
+                  <div className="flex flex-row flex-wrap w-full px-4 py-2 overflow-hidden text-sm text-justify text-gray-700">
                     {post.attributes.description}
-                  </p>
-                  <hr class="border-gray-300" />
-                  <section class="px-4 py-2 mt-2">
+                  </div>
+                  <div className="border-gray-300" />
+                  <div className="px-4 py-2 mt-2">
                     <div class="flex items-center justify-between">
                       <div class="flex items-center flex-1">
                         <div class="flex flex-col mx-2">
@@ -92,7 +92,7 @@ function Home({ posts }) {
                         </div>
                       </div>
                     </div>
-                  </section>
+                  </div>
                 </div>
               </div>
            

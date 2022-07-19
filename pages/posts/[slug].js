@@ -108,19 +108,19 @@ function Content({post}) {
             <div className="relative px-4 sm:px-6 lg:px-8">
                 <div className="text-lg max-w-prose mx-auto">
                     <h1>
-                        <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+                        <div className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
                             Introducing
-                        </span>
-                        <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                        </div>
+                        <div className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                             {post.data.attributes.title}
-                        </span>
+                        </div>
                     </h1>
                     <p className="mt-8 text-xl text-gray-500 leading-8">
                         {post.data.attributes.content}
                     </p>
                 </div>
 
-                <figure>
+                <div>
                     <Image  
                         className="w-full rounded-lg"
                         src={post.data.attributes.coverlink} 
@@ -129,7 +129,7 @@ function Content({post}) {
                         height={873}
                     />
 
-                </figure>
+                </div>
 
 
             </div>
