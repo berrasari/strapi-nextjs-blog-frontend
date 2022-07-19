@@ -34,14 +34,15 @@ export async function getStaticProps({params}) {
 
 function Content({post}) {
     const [render, setRender] = useState(false);
-
+    
   useEffect(() => {
     setRender(true);
   }, []);
     
     return (
         
-        <div className="relative py-16 bg-transparent overflow-hidden">
+        <div key={post.id}
+         className="relative py-16 bg-transparent overflow-hidden">
             
             <div className="relative px-4 sm:px-6 lg:px-8">
                 <div className="text-lg max-w-prose mx-auto">
