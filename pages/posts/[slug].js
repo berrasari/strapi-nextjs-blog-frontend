@@ -41,7 +41,7 @@ function Content({post}) {
     
     return (
         
-        <div className="relative py-16 bg-transparent overflow-hidden">
+        <div key ={post.id} className="relative py-16 bg-transparent overflow-hidden">
             <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
                 <div className="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
                     <svg
