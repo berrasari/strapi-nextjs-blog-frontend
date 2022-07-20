@@ -1,35 +1,9 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
+
 const URL = 'https://damp-scrubland-34325.herokuapp.com/';
 
 
-export async function getStaticPaths() {
-
-
-
-    const res = await fetch(`${URL}api/posts`);
-    const posts = await res.json()
-    const paths = posts.data.map((post) => {
-        return { params: { slug: post.attributes.slug,} }
-    })
-    
-    return {
-       
-        paths: paths,
-        fallback: true
-    };
-}
-
-export async function getStaticProps({params}) {
-    const{slug}=params;
-    const request = await fetch(`${URL}api/posts/${slug}`);
-    const post = await request.json();
-    return {
-        props: {
-            post,
-        },
-    }
-}
 
 
 function Content({post}) {
@@ -142,4 +116,36 @@ function Content({post}) {
     )
 }
 
+export async function getStaticPaths() {
+
+
+
+    const res = await fetch(`${URL}api/posts`);
+    const posts = await res.json()
+    const paths = posts.data.map((post) => {
+        return { params: { slug: post.attributes.slug,} }
+    })
+    
+    return {
+       
+        paths: paths,
+        fallback: true
+    };
+}
+
+export async function getStaticProps({params}) {
+    const{slug}=params;
+    const request = await fetch(`${URL}api/posts/${slug}`);
+    const post = await request.json();
+    if (!post) {
+        return {
+          notFound: true,
+        }
+      }
+    return {
+        props: {
+            post,
+        },
+    }
+}
 export default Content

@@ -4,6 +4,7 @@ module.exports = {
     styledComponents: true,
   },
   images: {
-    domains: ["images.unsplash.com"],
+    domains:  ["localhost"],
+    hostname: ["images.unsplash.com"]
   },
 }
