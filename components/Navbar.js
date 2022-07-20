@@ -42,7 +42,7 @@ export default function Navbar() {
                     > <Link
                     href="/posts"
                   >
-                    All Posts
+                    Blog
                   </Link></div>
                  <div
                     className="border-transparent text-gray-700 hover:border-indigo-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
