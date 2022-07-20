@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Link from 'next/link'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Image from 'next/image'
@@ -28,30 +29,30 @@ export default function Navbar() {
                 </div>
                 <div className="ml-40 pl-36 hidden px-5 sm:ml-36 sm:flex sm:space-x-8" >
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
+                  <Link
                     href="/"
                     className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Home
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/posts"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     All Posts
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="/about"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     About Us
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href="#"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Calendar
-                  </a>
+                  </Link>
                 </div>
               </div>
               

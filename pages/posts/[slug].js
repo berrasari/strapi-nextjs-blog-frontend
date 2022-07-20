@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { useState, useEffect } from "react";
+
 
 const URL = 'https://damp-scrubland-34325.herokuapp.com/';
 
@@ -7,11 +6,7 @@ const URL = 'https://damp-scrubland-34325.herokuapp.com/';
 
 
 function Content({post}) {
-    const [render, setRender] = useState(false);
-
-  useEffect(() => {
-    setRender(true);
-  }, []);
+    
     
     return (
         

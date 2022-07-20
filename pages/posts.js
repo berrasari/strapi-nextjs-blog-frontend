@@ -77,16 +77,16 @@ function Home({ posts }) {
                     </div>
                     <div className="border-gray-300" />
                     <div className="px-4 py-2 mt-2">
-                      <div class="flex items-center justify-between">
-                        <div class="flex items-center flex-1">
-                          <div class="flex flex-col mx-2">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center flex-1">
+                          <div className="flex flex-col mx-2">
                             <div
                               href=""
-                              class="font-semibold text-gray-700 hover:underline"
+                              className="font-semibold text-gray-700 hover:underline"
                             >
                               {post.attributes.author}
                             </div>
-                            <div class="text-xs text-gray-600">
+                            <div className="text-xs text-gray-600">
                               {post.attributes.createdAt}
                             </div>
                           </div>
