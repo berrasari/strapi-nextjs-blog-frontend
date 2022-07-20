@@ -5,7 +5,7 @@ const URL = 'https://damp-scrubland-34325.herokuapp.com/';
 
 
 
-function Content({post}) {
+const Content= ({ post }) => {
     
     
     return (
@@ -111,25 +111,25 @@ function Content({post}) {
     )
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths = async () =>{
 
 
 
     const res = await fetch(`${URL}api/posts`);
     const posts = await res.json()
     const paths = posts.data.map((post) => {
-        return { params: { slug: post.attributes.slug,} }
+        return { params: { slug: post.attributes.slug.toString(),} }
     })
     
     return {
        
         paths: paths,
-        fallback: true
+        fallback: false
     };
 }
 
-export async function getStaticProps({params}) {
-    const{slug}=params;
+export const getStaticProps = async (context) => {
+    const slug=context.params.slug;
     const request = await fetch(`${URL}api/posts/${slug}`);
     const post = await request.json();
     if (!post) {
