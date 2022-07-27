@@ -1,13 +1,14 @@
 import '../styles/globals.css'
-import Link from 'next/link'
-import Layout from '../components/Layout'
-import Footer from '../components/Footer'
+import Layout from "../components/Layout"
+import Footer from "../components/Footer"
+
+
 function MyApp({ Component, pageProps }) {
 
-  return <Layout><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+  return <><div className="max-w-full ">
   {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
-  <div className=" ">{<Component {...pageProps} /> }<Footer/></div>
-</div></Layout>
+  <div className=" ">{<Component {...pageProps} /> }</div>
+</div></>
 }
 
 export default MyApp

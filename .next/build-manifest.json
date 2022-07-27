@@ -25,15 +25,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/posts/en": [
+    "/espanol": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/posts/en.js"
+      "static/chunks/pages/espanol.js"
     ],
-    "/posts/es": [
+    "/espanol/posts": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/posts/es.js"
+      "static/chunks/pages/espanol/posts.js"
+    ],
+    "/espanol/posts/[slug]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/espanol/posts/[slug].js"
     ]
   },
   "ampFirstPages": []

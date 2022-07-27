@@ -1,0 +1,9 @@
+const Footer_2 = () => {
+    return (
+      <footer className="border-transparent text-gray-700 flex justify-center px-1 pt-1 border-b-2 text-sm font-medium">
+        <div>Derechos de autor 2022 Popup Builder </div>
+      </footer>
+    );
+  }
+   
+  export default Footer_2;

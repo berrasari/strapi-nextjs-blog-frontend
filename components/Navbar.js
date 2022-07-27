@@ -40,7 +40,7 @@ export default function Navbar() {
                   <div
                     className="border-transparent text-gray-700 hover:border-indigo-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     > <Link
-                    href="/posts/en"
+                    href="/posts"
                   >
                     Blog
                   </Link></div>
@@ -54,9 +54,9 @@ export default function Navbar() {
                   <div
                     className="border-transparent text-gray-700 hover:border-indigo-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     ><Link
-                    href="/"
+                    href="/espanol/"
                   >
-                    Calendar
+                    Cambiar a : ES
                   </Link></div>
                   
                 </div>
