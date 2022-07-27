@@ -1,21 +1,6 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
-  "/espanol/posts/[slug]": "pages/espanol/posts/[slug].js",
-  "/espanol/posts": "pages/espanol/posts.js",
-  "/posts": "pages/posts.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/posts/[slug]": "pages/posts/[slug].js",
-  "/en/404": "pages/en/404.html",
-  "/es/404": "pages/es/404.html",
-  "/en/500": "pages/en/500.html",
-  "/es/500": "pages/es/500.html",
-  "/en/espanol/about": "pages/en/espanol/about.html",
-  "/es/espanol/about": "pages/es/espanol/about.html",
-  "/en/espanol": "pages/en/espanol.html",
-  "/es/espanol": "pages/es/espanol.html",
-  "/en": "pages/en.html",
-  "/es": "pages/es.html",
-  "/en/about": "pages/en/about.html",
-  "/es/about": "pages/es/about.html"
+  "/": "pages/index.js"
 }
