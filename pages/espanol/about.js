@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+
 import Layout_2 from '../../components/Layout_2'
 import Footer_2 from '../../components/Footer_2'
 
